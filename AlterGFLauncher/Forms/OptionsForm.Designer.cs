@@ -42,6 +42,7 @@ namespace AlterGFLauncher.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.encryptionPasswordTextBox = new System.Windows.Forms.TextBox();
             this.encryptionCheckBox = new System.Windows.Forms.CheckBox();
+            this.gitLinkLinkLabel = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.timeoutBeforeCodeLabelNumeric)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,12 +171,23 @@ namespace AlterGFLauncher.Forms
             this.encryptionCheckBox.UseVisualStyleBackColor = true;
             this.encryptionCheckBox.CheckedChanged += new System.EventHandler(this.encryptionCheckBox_CheckedChanged);
             // 
+            // gitLinkLinkLabel
+            // 
+            this.gitLinkLinkLabel.AutoSize = true;
+            this.gitLinkLinkLabel.Location = new System.Drawing.Point(4, 210);
+            this.gitLinkLinkLabel.Name = "gitLinkLinkLabel";
+            this.gitLinkLinkLabel.Size = new System.Drawing.Size(263, 13);
+            this.gitLinkLinkLabel.TabIndex = 12;
+            this.gitLinkLinkLabel.TabStop = true;
+            this.gitLinkLinkLabel.Text = "https://github.com/BigFantasyTools/AlterGFLauncher";
+            // 
             // OptionsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 208);
+            this.ClientSize = new System.Drawing.Size(319, 227);
             this.ControlBox = false;
+            this.Controls.Add(this.gitLinkLinkLabel);
             this.Controls.Add(this.encryptionCheckBox);
             this.Controls.Add(this.encryptionPasswordTextBox);
             this.Controls.Add(this.label1);
@@ -217,5 +229,6 @@ namespace AlterGFLauncher.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox encryptionPasswordTextBox;
         private System.Windows.Forms.CheckBox encryptionCheckBox;
+        private System.Windows.Forms.LinkLabel gitLinkLinkLabel;
     }
 }

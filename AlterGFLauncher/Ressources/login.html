@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+</head>
+<body>
+	<script>
+	function sendForm() {
+		document.getElementById("form").submit();
+	}
+	window.onload=sendForm;
+	</script>
+	<form id="form" action="https://api.aeriagames.com/dialog/oauth?response_type=code&client_id={IDCLIENT}&state=xyz&lang=fr&Scope=scope_general,scope_billing"  method="post" id="account_login" data-ajax="false">
+		<input type="text" name="edit[id]" value="{ID}" />
+		<input type="password" name="edit[pass]" value="{PASSWORD}" />
+		<input type="hidden" name="edit[method]" value="oauth2"/>
+		<input type="hidden" name="edit[form_id]" value="account_login"/>
+		<input type="submit" name="op" value="Se connecter"/>
+	</form>
+</body>
+</html>

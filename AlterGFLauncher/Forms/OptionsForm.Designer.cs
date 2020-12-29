@@ -180,6 +180,7 @@ namespace AlterGFLauncher.Forms
             this.gitLinkLinkLabel.TabIndex = 12;
             this.gitLinkLinkLabel.TabStop = true;
             this.gitLinkLinkLabel.Text = "https://github.com/BigFantasyTools/AlterGFLauncher";
+            this.gitLinkLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.gitLinkLinkLabel_LinkClicked);
             // 
             // OptionsForm
             // 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
@@ -80,6 +81,11 @@ namespace AlterGFLauncher.Forms
                 invalidOptions += Strings.STRING_PASSWORD_INVALID_OPTIONS + "\n";
 
             return invalidOptions;
+        }
+
+        private void gitLinkLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(gitLinkLinkLabel.Text);
         }
     }
 }
